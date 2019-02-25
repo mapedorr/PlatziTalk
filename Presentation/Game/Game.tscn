@@ -1,0 +1,702 @@
+[gd_scene load_steps=30 format=2]
+
+[ext_resource path="res://Presentation/Game/Game.gd" type="Script" id=1]
+[ext_resource path="res://Presentation/Game/Sprites/Desk.png" type="Texture" id=2]
+[ext_resource path="res://Presentation/Game/Tokens/DraggableSprite/DraggableSprite.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Presentation/Game/Sprites/Sheet.png" type="Texture" id=4]
+[ext_resource path="res://Presentation/Game/Sprites/DarkSheet.png" type="Texture" id=5]
+[ext_resource path="res://Presentation/Game/Sprites/Album/Panda&Rhyno.png" type="Texture" id=6]
+[ext_resource path="res://Presentation/Game/Sprites/Album/Machinaria.png" type="Texture" id=7]
+[ext_resource path="res://Presentation/Game/Sprites/Album/SlowRide.png" type="Texture" id=8]
+[ext_resource path="res://Presentation/Game/Sprites/Album/BlindBird.png" type="Texture" id=9]
+[ext_resource path="res://Presentation/Game/Sprites/Album/TheLegend.png" type="Texture" id=10]
+[ext_resource path="res://Presentation/Game/Sprites/Album/KOTE.png" type="Texture" id=11]
+[ext_resource path="res://Presentation/Game/Sprites/Album/ShortTermBattery.png" type="Texture" id=12]
+[ext_resource path="res://Presentation/Game/Sprites/Album/InTheShadows.png" type="Texture" id=13]
+[ext_resource path="res://Presentation/Game/Sprites/Album/7Puzzles.png" type="Texture" id=14]
+[ext_resource path="res://Presentation/Game/Sprites/BlackMamba.png" type="Texture" id=15]
+[ext_resource path="res://Presentation/Game/Sprites/Machinaria.png" type="Texture" id=16]
+[ext_resource path="res://Presentation/CustomResources/Themes/Presentation.tres" type="Theme" id=17]
+[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KennyPixelRegular-96.tres" type="DynamicFont" id=18]
+[ext_resource path="res://Presentation/Sprites/CarenalgaB&W.png" type="Texture" id=19]
+[ext_resource path="res://Presentation/Game/Sprites/Checkbox.png" type="Texture" id=20]
+[ext_resource path="res://Presentation/Game/UI/UI.gd" type="Script" id=21]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Background.png" type="Texture" id=22]
+[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KenneyRocketRegular-48.tres" type="DynamicFont" id=23]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token.png" type="Texture" id=24]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule.png" type="Texture" id=25]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player.png" type="Texture" id=26]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Trash.png" type="Texture" id=27]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Goals.png" type="Texture" id=28]
+
+[sub_resource type="Animation" id=1]
+
+resource_name = "ToggleGoals"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("GoalsList:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.4, 0.7, 0.9 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 342, 1115 ), Vector2( 342, 465 ), Vector2( 342, 407 ), Vector2( 342, 465 ) ]
+}
+
+[node name="Game" type="Control" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 1 )
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Timer" type="Timer" parent="." index="0"]
+
+process_mode = 1
+wait_time = 1.0
+one_shot = false
+autostart = false
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="1"]
+
+root_node = NodePath("..")
+autoplay = ""
+playback_process_mode = 1
+playback_default_blend_time = 0.0
+playback_speed = 1.0
+anims/ToggleGoals = SubResource( 1 )
+blend_times = [  ]
+
+[node name="Desk" type="TextureRect" parent="." index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1664.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 2 )
+stretch_mode = 0
+
+[node name="Sheets" type="Container" parent="." index="3"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="SheetBlackMamba3" parent="Sheets" index="0" instance=ExtResource( 3 )]
+
+visible = false
+texture = ExtResource( 4 )
+
+[node name="SheetBlackMamba2" parent="Sheets" index="1" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+position = Vector2( 398, 35 )
+texture = ExtResource( 5 )
+centered = false
+on_drag_texture = ExtResource( 5 )
+
+[node name="TextureRect" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 100.0
+margin_top = 73.0
+margin_right = 350.0
+margin_bottom = 315.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 6 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect2" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 383.0
+margin_top = 70.0
+margin_right = 633.0
+margin_bottom = 312.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 7 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect3" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 661.0
+margin_top = 74.0
+margin_right = 911.0
+margin_bottom = 316.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 8 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect4" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 100.0
+margin_top = 351.0
+margin_right = 350.0
+margin_bottom = 593.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 9 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect5" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="5"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 383.0
+margin_top = 351.0
+margin_right = 633.0
+margin_bottom = 593.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 10 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect6" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="6"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 661.0
+margin_top = 353.0
+margin_right = 911.0
+margin_bottom = 595.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 11 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect9" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="7"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 661.0
+margin_top = 658.0
+margin_right = 911.0
+margin_bottom = 845.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 12 )
+expand = true
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect7" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="8"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 100.0
+margin_top = 632.0
+margin_right = 350.0
+margin_bottom = 874.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 13 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="TextureRect8" type="TextureRect" parent="Sheets/SheetBlackMamba2" index="9"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 383.0
+margin_top = 631.0
+margin_right = 633.0
+margin_bottom = 873.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 14 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="SheetBlackMamba" parent="Sheets" index="2" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+position = Vector2( 437, 49 )
+texture = ExtResource( 4 )
+centered = false
+on_drag_texture = ExtResource( 4 )
+
+[node name="BlackMamba" type="Sprite" parent="Sheets/SheetBlackMamba" index="1"]
+
+position = Vector2( 492, 348 )
+texture = ExtResource( 15 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Machinaria" type="Sprite" parent="Sheets/SheetBlackMamba" index="2"]
+
+position = Vector2( 507, 658 )
+texture = ExtResource( 16 )
+
+[node name="SheetCarenalga" parent="Sheets" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 398, 47 )
+texture = ExtResource( 4 )
+centered = false
+_sections_unfolded = [ "Offset", "Transform" ]
+on_drag_texture = ExtResource( 4 )
+
+[node name="Carenalga" type="Label" parent="Sheets/SheetCarenalga" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -370.5
+margin_bottom = -324.5
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_fonts/font = ExtResource( 18 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Carenalga / Mapedorr"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Sprite" type="Sprite" parent="Sheets/SheetCarenalga" index="2"]
+
+position = Vector2( 481, 446 )
+texture = ExtResource( 19 )
+_sections_unfolded = [ "Transform" ]
+
+[node name="Description" type="Label" parent="Sheets/SheetCarenalga" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = 183.5
+margin_bottom = 376.5
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Soy diseñador de juegos,
+programador,
+creador de pixel art e
+ilustrador ocasional"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Area2D" type="Area2D" parent="Sheets" index="4"]
+
+editor/display_folded = true
+position = Vector2( 1665, 0 )
+input_pickable = false
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+
+[node name="Collision_Area" type="CollisionPolygon2D" parent="Sheets/Area2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+
+[node name="GoalsList" type="TextureRect" parent="." index="4"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 342.0
+margin_top = 1115.0
+margin_right = 1325.0
+margin_bottom = 2098.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 4 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="ColorRect" type="ColorRect" parent="GoalsList" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 103.0
+margin_top = 119.0
+margin_right = 881.0
+margin_bottom = 193.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 0, 0, 0, 1 )
+_sections_unfolded = [ "Rect" ]
+
+[node name="Title" type="Label" parent="GoalsList" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 343.0
+margin_top = 118.0
+margin_right = 625.0
+margin_bottom = 190.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_fonts/font = ExtResource( 18 )
+text = "Objetivos"
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Theme", "custom_fonts" ]
+
+[node name="Checkbox" type="TextureRect" parent="GoalsList" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 111.0
+margin_top = 254.0
+margin_right = 159.0
+margin_bottom = 302.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 20 )
+stretch_mode = 0
+
+[node name="UI" type="Container" parent="." index="5"]
+
+editor/display_folded = true
+anchor_left = 1.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 0.0
+margin_left = 1624.0
+margin_right = 1880.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+script = ExtResource( 21 )
+
+[node name="Background" type="TextureRect" parent="UI" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 40.0
+margin_bottom = 40.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Time" type="Label" parent="UI" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 19.0
+margin_top = 70.0
+margin_right = 237.0
+margin_bottom = 130.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_fonts/font = ExtResource( 23 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "20:00"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "custom_fonts" ]
+
+[node name="Buttons" type="VBoxContainer" parent="UI" index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_top = 145.0
+margin_right = 255.0
+margin_bottom = 1064.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 32
+alignment = 1
+_sections_unfolded = [ "custom_constants" ]
+
+[node name="Tokens" type="TextureButton" parent="UI/Buttons" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 63.0
+margin_top = 75.0
+margin_right = 191.0
+margin_bottom = 203.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 24 )
+_sections_unfolded = [ "Mouse", "Size Flags", "Textures" ]
+
+[node name="Rules" type="TextureButton" parent="UI/Buttons" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 63.0
+margin_top = 235.0
+margin_right = 191.0
+margin_bottom = 363.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 25 )
+_sections_unfolded = [ "Size Flags", "Textures" ]
+
+[node name="Player" type="TextureButton" parent="UI/Buttons" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 63.0
+margin_top = 395.0
+margin_right = 192.0
+margin_bottom = 523.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 26 )
+_sections_unfolded = [ "Size Flags", "Textures" ]
+
+[node name="Trash" type="TextureButton" parent="UI/Buttons" index="3"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 63.0
+margin_top = 555.0
+margin_right = 191.0
+margin_bottom = 683.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 27 )
+_sections_unfolded = [ "Textures", "Visibility" ]
+
+[node name="Goals" type="TextureButton" parent="UI/Buttons" index="4"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 63.0
+margin_top = 715.0
+margin_right = 191.0
+margin_bottom = 843.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 4
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 28 )
+_sections_unfolded = [ "Size Flags", "Textures" ]
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+
+[connection signal="area_entered" from="Sheets/Area2D" to="." method="_on_Area2D_area_entered"]
+
+

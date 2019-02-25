@@ -1,0 +1,47 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Presentation/Game/Tokens/DraggableSprite/DraggableSprite.gd" type="Script" id=1]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 10 )
+
+[node name="DraggableSprite" type="Sprite"]
+
+script = ExtResource( 1 )
+on_drag_texture = null
+
+[node name="Tween" type="Tween" parent="." index="0"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="Area2D" type="Area2D" parent="." index="1"]
+
+editor/display_folded = true
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+_sections_unfolded = [ "Pickable", "Transform" ]
+
+[node name="Collision_Area" type="CollisionPolygon2D" parent="Area2D" index="0"]
+
+build_mode = 0
+polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
+disabled = true
+one_way_collision = true
+
+[node name="Collision_Drawing" type="CollisionShape2D" parent="Area2D" index="1"]
+
+shape = SubResource( 1 )
+
+
