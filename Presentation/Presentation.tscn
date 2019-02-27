@@ -122,7 +122,6 @@ mouse_default_cursor_shape = 2
 size_flags_horizontal = 1
 size_flags_vertical = 1
 theme = ExtResource( 5 )
-custom_colors/font_color = Color( 0, 0, 0, 1 )
 toggle_mode = false
 enabled_focus_mode = 2
 shortcut = null
@@ -130,11 +129,15 @@ group = null
 text = "empezar"
 flat = false
 align = 1
-_sections_unfolded = [ "Theme" ]
 
 [node name="Desk" parent="Slides" index="1" instance=ExtResource( 3 )]
 
+visible = false
+
 [node name="Game" parent="Slides/Desk" index="1" instance=ExtResource( 7 )]
+
+auto_init = false
+step = 0
 
 [connection signal="pressed" from="Slides/Home/Button" to="Slides/Home" method="goto_next"]
 

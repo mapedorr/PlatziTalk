@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/UI_Rule.png-a4ac5fd39f0fbd37554a82e53643aeb1.stex"
+path="res://.import/UI_Player-Disabled.png-713291859c4829b69c3d751fefbef956.stex"
 
 [deps]
 
-source_file="res://Presentation/Game/UI/Sprites/UI_Rule.png"
-dest_files=[ "res://.import/UI_Rule.png-a4ac5fd39f0fbd37554a82e53643aeb1.stex" ]
+source_file="res://Presentation/Game/UI/Sprites/UI_Player-Disabled.png"
+dest_files=[ "res://.import/UI_Player-Disabled.png-713291859c4829b69c3d751fefbef956.stex" ]
 
 [params]
 

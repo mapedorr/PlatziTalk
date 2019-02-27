@@ -64,44 +64,28 @@ func on_mouse_exit():
 
 func on_drag_end():
 	if byebye:
-		disabled = true
-		$Tween.interpolate_property(
-			self,
-			'position',
-			get_position(),
-			Vector2(texture.get_size().x + 1920 + 64, get_position().y),
-			1.0,
-			$Tween.TRANS_BOUNCE,
-			$Tween.EASE_IN
-		)
-		$Tween.start()
-		yield($Tween, 'tween_completed')
+		yield(byebye(), 'completed')
 		$'../..'.next_sheet()
-#	self.texture = original_texture
-#	var parent = self.get_parent()
-#	if next_slot_candidate \
-#		&& next_slot_candidate != parent \
-#		&& parent.InsertType == next_slot_candidate.InsertType:
-#			if !next_slot_candidate.inserted.visible:
-#				var previous_props = self.get_props()
-#				parent.remove_object()
-#				next_slot_candidate.insert_object(previous_props)
-#			else:
-#				on_overlap()
-#	else:
-#		return_to_original_position()
-#
-#	position = previous_position
-#	next_slot_candidate = null
-#	object_insert()
-#	emit_signal("drag_end")
-	pass
 
 func on_drag_start():
 	self.texture = on_drag_texture
 	object_grab()
 	emit_signal("drag_start")
 	next_slot_candidate = self.get_parent()
+
+func byebye():
+	disabled = true
+	$Tween.interpolate_property(
+		self,
+		'position',
+		get_position(),
+		Vector2(texture.get_size().x + 1920 + 64, get_position().y),
+		1.0,
+		$Tween.TRANS_BOUNCE,
+		$Tween.EASE_IN
+	)
+	$Tween.start()
+	yield($Tween, 'tween_completed')
 
 func return_to_original_position():
 	pass

@@ -2,12 +2,12 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Checkbox.png-372d73768b4b4432494653483f02a283.stex"
+path="res://.import/MentalModel.png-2450f550bfbe469b2c08f4d815e9ee26.stex"
 
 [deps]
 
-source_file="res://Presentation/Game/Sprites/Checkbox.png"
-dest_files=[ "res://.import/Checkbox.png-372d73768b4b4432494653483f02a283.stex" ]
+source_file="res://Presentation/Game/Sprites/AbstractGame/MentalModel.png"
+dest_files=[ "res://.import/MentalModel.png-2450f550bfbe469b2c08f4d815e9ee26.stex" ]
 
 [params]
 
