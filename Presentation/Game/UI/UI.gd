@@ -15,14 +15,21 @@ func enable_button(name):
 func disable_button(name):
 	get_node('Buttons/' + name).disabled = true
 
+func press_button(name, press = true):
+	get_node('Buttons/' + name).set_pressed(press)
+
 func show_buttons():
 	for button in $Buttons.get_children():
 		button.modulate = Color('ffffffff')
 
 func hide_menu_game():
-	yield(get_tree().create_timer(1.0), 'timeout')
+	yield(get_tree().create_timer(0.5), 'timeout')
 	$'../AnimationPlayer'.play_backwards('ShowMenuGame')
 	$Buttons/Game.set_pressed(false)
+
+func hide_button(name):
+	disable_button(name)
+	get_node('Buttons/' + name).modulate = Color('00ffffff')
 
 # ------------------------------------------------------------------------------
 # CLICK LISTENERS!
@@ -42,8 +49,8 @@ func _on_Player_pressed():
 	$'../'.show_abstract_game(get_parent().FEEDBACK_LOOP)
 
 func _on_Designer_pressed():
-	enable_button('Game')
-
+	if $Buttons/Designer.is_pressed():
+		$'../'.designer_clicked()
 
 func _on_Constraints_pressed():
 	$'../'.show_abstract_game(get_parent().MAGIC_CIRCLE)
@@ -54,3 +61,7 @@ func _on_Tokens_pressed():
 	
 func _on_Rules_pressed():
 	$'../'.show_abstract_game(get_parent().RULES)
+
+
+func _on_Context_pressed():
+	pass # replace with function body

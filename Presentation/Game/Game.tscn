@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=76 format=2]
 
 [ext_resource path="res://Presentation/Game/Game.gd" type="Script" id=1]
 [ext_resource path="res://Presentation/Game/Sprites/Desk.png" type="Texture" id=2]
@@ -19,42 +19,48 @@
 [ext_resource path="res://Presentation/CustomResources/Themes/Presentation.tres" type="Theme" id=17]
 [ext_resource path="res://Presentation/CustomResources/DynamicFonts/KennyPixelRegular-96.tres" type="DynamicFont" id=18]
 [ext_resource path="res://Presentation/Sprites/CarenalgaB&W.png" type="Texture" id=19]
-[ext_resource path="res://Presentation/Game/GoalsList/GoalsList.gd" type="Script" id=20]
-[ext_resource path="res://Presentation/Game/GoalsList/Sprites/Checkbox-Checked.png" type="Texture" id=21]
-[ext_resource path="res://Presentation/Game/GoalsList/Sprites/Checkbox-Normal.png" type="Texture" id=22]
+[ext_resource path="res://Presentation/Sprites/Card.png" type="Texture" id=20]
+[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KennyPixelRegular-60.tres" type="DynamicFont" id=21]
+[ext_resource path="res://Presentation/Game/Sprites/DesignGoal/Perspective.png" type="Texture" id=22]
 [ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Feedback.png" type="Texture" id=23]
 [ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Input.png" type="Texture" id=24]
 [ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Message.png" type="Texture" id=25]
-[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/Button.tres" type="StyleBox" id=26]
-[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Player-Pressed.png" type="Texture" id=27]
-[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Player.png" type="Texture" id=28]
-[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Magic_Circle.png" type="Texture" id=29]
-[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Rules.png" type="Texture" id=30]
-[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Tokens.png" type="Texture" id=31]
-[ext_resource path="res://Presentation/Game/UI/UI.gd" type="Script" id=32]
-[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/MenuButton-Hover.tres" type="StyleBox" id=33]
-[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/MenuButton-Disabled.tres" type="StyleBox" id=34]
-[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/MenuButton.tres" type="StyleBox" id=35]
-[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KennyPixelRegular-60.tres" type="DynamicFont" id=36]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Background.png" type="Texture" id=37]
-[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KenneyRocketRegular-48.tres" type="DynamicFont" id=38]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Designer-Normal.png" type="Texture" id=39]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Designer-Pressed.png" type="Texture" id=40]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Designer-Disabled.png" type="Texture" id=41]
-[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KennyPixelRegular-38.tres" type="DynamicFont" id=42]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token-Normal.png" type="Texture" id=43]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token-Pressed.png" type="Texture" id=44]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token-Disabled.png" type="Texture" id=45]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player-Normal.png" type="Texture" id=46]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player-Pressed.png" type="Texture" id=47]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player-Disabled.png" type="Texture" id=48]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule-Normal.png" type="Texture" id=49]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule-Pressed.png" type="Texture" id=50]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule-Disabled.png" type="Texture" id=51]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Goals-Normal.png" type="Texture" id=52]
-[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Goals-Pressed.png" type="Texture" id=53]
+[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Player-Pressed.png" type="Texture" id=26]
+[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Player.png" type="Texture" id=27]
+[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Magic_Circle.png" type="Texture" id=28]
+[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Rules.png" type="Texture" id=29]
+[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/Tokens.png" type="Texture" id=30]
+[ext_resource path="res://Presentation/Game/Sprites/AbstractGame/World.png" type="Texture" id=31]
+[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/Button.tres" type="StyleBox" id=32]
+[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/Sticker.tres" type="StyleBox" id=33]
+[ext_resource path="res://Presentation/Game/Sprites/DesignQuestions/Pin.png" type="Texture" id=34]
+[ext_resource path="res://Presentation/Game/Tokens/AnimatedLabel/AnimatedLabel.tscn" type="PackedScene" id=35]
+[ext_resource path="res://Presentation/Game/GoalsList/GoalsList.gd" type="Script" id=36]
+[ext_resource path="res://Presentation/Game/GoalsList/Sprites/Checkbox-Checked.png" type="Texture" id=37]
+[ext_resource path="res://Presentation/Game/GoalsList/Sprites/Checkbox-Normal.png" type="Texture" id=38]
+[ext_resource path="res://Presentation/Game/UI/UI.gd" type="Script" id=39]
+[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/MenuButton-Hover.tres" type="StyleBox" id=40]
+[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/MenuButton-Disabled.tres" type="StyleBox" id=41]
+[ext_resource path="res://Presentation/CustomResources/StyleBoxTextures/MenuButton.tres" type="StyleBox" id=42]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Background.png" type="Texture" id=43]
+[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KenneyRocketRegular-48.tres" type="DynamicFont" id=44]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Designer-Normal.png" type="Texture" id=45]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Designer-Pressed.png" type="Texture" id=46]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Designer-Disabled.png" type="Texture" id=47]
+[ext_resource path="res://Presentation/CustomResources/DynamicFonts/KennyPixelRegular-38.tres" type="DynamicFont" id=48]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token-Normal.png" type="Texture" id=49]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token-Pressed.png" type="Texture" id=50]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Token-Disabled.png" type="Texture" id=51]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player-Normal.png" type="Texture" id=52]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player-Pressed.png" type="Texture" id=53]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Player-Disabled.png" type="Texture" id=54]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule-Normal.png" type="Texture" id=55]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule-Pressed.png" type="Texture" id=56]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Rule-Disabled.png" type="Texture" id=57]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Goals-Normal.png" type="Texture" id=58]
+[ext_resource path="res://Presentation/Game/UI/Sprites/UI_Goals-Pressed.png" type="Texture" id=59]
 
-[sub_resource type="Animation" id=5]
+[sub_resource type="Animation" id=1]
 
 resource_name = "AddPlayer"
 length = 1.0
@@ -132,10 +138,52 @@ tracks/5/keys = {
 "update": 0,
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
+tracks/6/type = "value"
+tracks/6/path = NodePath("AbstractGame/World:rect_position")
+tracks/6/interp = 2
+tracks/6/loop_wrap = true
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/keys = {
+"times": PoolRealArray( 0, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 494, 150 ), Vector2( 874, 150 ) ]
+}
 
-[sub_resource type="Animation" id=7]
+[sub_resource type="Animation" id=2]
 
-resource_name = "Interact"
+resource_name = "HideAbstractGame"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("AbstractGame:rect_scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0, 0 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("AbstractGame:modulate")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
+}
+
+[sub_resource type="Animation" id=3]
+
 length = 0.3
 loop = false
 step = 0.1
@@ -152,9 +200,88 @@ tracks/0/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=1]
+[sub_resource type="Animation" id=11]
 
-resource_name = "ShowMagicCircle"
+resource_name = "ShowConclusions"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Conclusions:position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( -1022, 47 ), Vector2( -866, 47 ) ]
+}
+
+[sub_resource type="Animation" id=4]
+
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("DesignGoal:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 0.4, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 271, -753 ), Vector2( 271, 366 ), Vector2( 271, 406 ), Vector2( 271, 366 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+
+resource_name = "ShowDesignQuestions"
+length = 1.0
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("DesignQuestions/Question1:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 430, -608 ), Vector2( 430, 186 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DesignQuestions/Question2:rect_position")
+tracks/1/interp = 2
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 498, -431 ), Vector2( 498, 469 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DesignQuestions/Question3:rect_position")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.4, 0.7 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 606, -259 ), Vector2( 606, 733 ) ]
+}
+
+[sub_resource type="Animation" id=5]
+
 length = 0.5
 loop = false
 step = 0.1
@@ -170,10 +297,33 @@ tracks/0/keys = {
 "update": 0,
 "values": [ Vector2( -844, 131 ), Vector2( 422, 131 ) ]
 }
+tracks/1/type = "value"
+tracks/1/path = NodePath("AbstractGame/World:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0, 0 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("AbstractGame/World:self_modulate")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
 
-[sub_resource type="Animation" id=8]
+[sub_resource type="Animation" id=6]
 
-resource_name = "ShowMentalModel"
 length = 0.5
 loop = false
 step = 0.1
@@ -187,7 +337,7 @@ tracks/0/keys = {
 "times": PoolRealArray( 0, 0.3, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 430, 410 ), Vector2( 427, 20 ), Vector2( 105, 20 ) ]
+"values": [ Vector2( 407, 496 ), Vector2( 1132, 503 ), Vector2( 685, 95 ) ]
 }
 tracks/1/type = "value"
 tracks/1/path = NodePath("AbstractGame/MentalModel:rect_size")
@@ -199,7 +349,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 0.3, 0.5 ),
 "transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Vector2( 31, 95 ), Vector2( 31, 335 ), Vector2( 675, 335 ) ]
+"values": [ Vector2( 60, 95 ), Vector2( 60, 60 ), Vector2( 954, 877 ) ]
 }
 tracks/2/type = "value"
 tracks/2/path = NodePath("AbstractGame/MentalModel:modulate")
@@ -208,10 +358,10 @@ tracks/2/loop_wrap = true
 tracks/2/imported = false
 tracks/2/enabled = true
 tracks/2/keys = {
-"times": PoolRealArray( 0.2, 0.4 ),
-"transitions": PoolRealArray( 1, 1 ),
+"times": PoolRealArray( 0, 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
 "update": 0,
-"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
 }
 tracks/3/type = "value"
 tracks/3/path = NodePath("AbstractGame/Input:self_modulate")
@@ -238,9 +388,8 @@ tracks/4/keys = {
 "values": [ Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=2]
+[sub_resource type="Animation" id=7]
 
-resource_name = "ShowMenuGame"
 length = 0.4
 loop = false
 step = 0.1
@@ -257,7 +406,155 @@ tracks/0/keys = {
 "values": [ Vector2( 500, 326 ), Vector2( 0, 326 ) ]
 }
 
-[sub_resource type="Animation" id=3]
+[sub_resource type="Animation" id=13]
+
+resource_name = "ShowQuestion1"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("DesignQuestions/Question1/Pin:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 607, 15 ), Vector2( 14, 15 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DesignQuestions/Question1/Sticker:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DesignQuestions/Question1/Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+
+resource_name = "ShowQuestion2"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("DesignQuestions/Question2/Pin:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 607, 15 ), Vector2( 14, 15 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DesignQuestions/Question2/Sticker:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DesignQuestions/Question2/Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+
+resource_name = "ShowQuestion3"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("DesignQuestions/Question3/Pin:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 607, 15 ), Vector2( 14, 15 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("DesignQuestions/Question3/Sticker:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0.2, 0.4 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 1 ), Color( 0, 0, 0, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("DesignQuestions/Question3/Text:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0.3, 0.5 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+
+resource_name = "ShowThanks"
+length = 0.5
+loop = false
+step = 0.1
+tracks/0/type = "value"
+tracks/0/path = NodePath("Thanks/Carenalga:rect_position")
+tracks/0/interp = 2
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1942, 130 ), Vector2( 576, 130 ) ]
+}
+
+[sub_resource type="Animation" id=8]
 
 length = 1.0
 loop = false
@@ -275,9 +572,8 @@ tracks/0/keys = {
 "values": [ Vector2( 342, 1115 ), Vector2( 342, 465 ), Vector2( 342, 407 ), Vector2( 342, 465 ) ]
 }
 
-[sub_resource type="Animation" id=6]
+[sub_resource type="Animation" id=9]
 
-resource_name = "SendFeedback"
 length = 1.0
 loop = false
 step = 0.1
@@ -306,9 +602,8 @@ tracks/1/keys = {
 "values": [ Color( 1, 1, 1, 0 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 1 ), Color( 1, 1, 1, 0 ) ]
 }
 
-[sub_resource type="Animation" id=4]
+[sub_resource type="Animation" id=10]
 
-resource_name = "SendInput"
 length = 1.0
 loop = false
 step = 0.1
@@ -352,9 +647,8 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 script = ExtResource( 1 )
-_sections_unfolded = [ "Mouse" ]
-auto_init = true
-step = 2
+auto_init = false
+step = 0
 
 [node name="Timer" type="Timer" parent="." index="0"]
 
@@ -370,12 +664,20 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/AddPlayer = SubResource( 5 )
-anims/Interact = SubResource( 7 )
-anims/ShowMagicCircle = SubResource( 1 )
-anims/ShowMentalModel = SubResource( 8 )
-anims/ShowMenuGame = SubResource( 2 )
-anims/ToggleGoals = SubResource( 3 )
+anims/AddPlayer = SubResource( 1 )
+anims/HideAbstractGame = SubResource( 2 )
+anims/Interact = SubResource( 3 )
+anims/ShowConclusions = SubResource( 11 )
+anims/ShowDesignGoal = SubResource( 4 )
+anims/ShowDesignQuestions = SubResource( 12 )
+anims/ShowMagicCircle = SubResource( 5 )
+anims/ShowMentalModel = SubResource( 6 )
+anims/ShowMenuGame = SubResource( 7 )
+anims/ShowQuestion1 = SubResource( 13 )
+anims/ShowQuestion2 = SubResource( 14 )
+anims/ShowQuestion3 = SubResource( 15 )
+anims/ShowThanks = SubResource( 16 )
+anims/ToggleGoals = SubResource( 8 )
 blend_times = [  ]
 
 [node name="FeedbackLoopPlayer" type="AnimationPlayer" parent="." index="2"]
@@ -385,11 +687,20 @@ autoplay = ""
 playback_process_mode = 1
 playback_default_blend_time = 0.0
 playback_speed = 1.0
-anims/SendFeedback = SubResource( 6 )
-anims/SendInput = SubResource( 4 )
+anims/SendFeedback = SubResource( 9 )
+anims/SendInput = SubResource( 10 )
 blend_times = [  ]
 
-[node name="Desk" type="TextureRect" parent="." index="3"]
+[node name="Tween" type="Tween" parent="." index="3"]
+
+repeat = false
+playback_process_mode = 1
+playback_speed = 1.0
+playback/active = false
+playback/repeat = false
+playback/speed = 1.0
+
+[node name="Desk" type="TextureRect" parent="." index="4"]
 
 anchor_left = 0.0
 anchor_top = 0.0
@@ -406,7 +717,7 @@ size_flags_vertical = 1
 texture = ExtResource( 2 )
 stretch_mode = 0
 
-[node name="SheetEater" type="Area2D" parent="." index="4"]
+[node name="SheetEater" type="Area2D" parent="." index="5"]
 
 editor/display_folded = true
 position = Vector2( 1665, 0 )
@@ -423,10 +734,9 @@ audio_bus_name = "Master"
 build_mode = 0
 polygon = PoolVector2Array( 0, 0, 0, 0, 0, 0, 0, 0 )
 
-[node name="Sheets" type="Container" parent="." index="5"]
+[node name="Sheets" type="Container" parent="." index="6"]
 
 editor/display_folded = true
-visible = false
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -718,7 +1028,1099 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect" ]
 
-[node name="GoalsList" type="TextureRect" parent="." index="6"]
+[node name="DesignGoal" type="TextureRect" parent="." index="7"]
+
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 251.0
+margin_top = -773.0
+margin_right = 1315.0
+margin_bottom = -338.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 20 )
+stretch_mode = 0
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="Label" type="Label" parent="DesignGoal" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 25.0
+margin_top = -199.5
+margin_right = -25.0
+margin_bottom = 115.5
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_fonts/font = ExtResource( 21 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Ver las posibilidades que algo ofrece para experimentar, para ser explorado"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Label2" type="Label" parent="DesignGoal" index="1"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = -83.0
+margin_bottom = -37.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+text = "Observar desde diferentes perspectivas"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Theme" ]
+
+[node name="FakeButton" type="TextureButton" parent="DesignGoal" index="2"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Perspectives" type="Container" parent="DesignGoal" index="3"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Perspective" type="TextureRect" parent="DesignGoal/Perspectives" index="0"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -107.0
+margin_top = -238.0
+margin_right = 53.0
+margin_bottom = -94.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective2" type="TextureRect" parent="DesignGoal/Perspectives" index="1"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 477.0
+margin_top = -318.0
+margin_right = 637.0
+margin_bottom = -174.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective3" type="TextureRect" parent="DesignGoal/Perspectives" index="2"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1045.0
+margin_top = -227.0
+margin_right = 1205.0
+margin_bottom = -83.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective4" type="TextureRect" parent="DesignGoal/Perspectives" index="3"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1147.0
+margin_top = 148.0
+margin_right = 1307.0
+margin_bottom = 292.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective5" type="TextureRect" parent="DesignGoal/Perspectives" index="4"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 1027.0
+margin_top = 507.0
+margin_right = 1187.0
+margin_bottom = 651.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective6" type="TextureRect" parent="DesignGoal/Perspectives" index="5"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 473.0
+margin_top = 516.0
+margin_right = 633.0
+margin_bottom = 660.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective7" type="TextureRect" parent="DesignGoal/Perspectives" index="6"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -150.0
+margin_top = 452.0
+margin_right = 10.0
+margin_bottom = 596.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="Perspective8" type="TextureRect" parent="DesignGoal/Perspectives" index="7"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -223.0
+margin_top = 107.0
+margin_right = -63.0
+margin_bottom = 251.0
+rect_scale = Vector2( 0, 0 )
+rect_pivot_offset = Vector2( 80, 72 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 22 )
+stretch_mode = 0
+
+[node name="AbstractGame" type="Container" parent="." index="8"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1664.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 832, 540 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Feedback" type="TextureRect" parent="AbstractGame" index="0"]
+
+self_modulate = Color( 1, 1, 1, 0.0287344 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -424.0
+margin_top = 142.0
+margin_right = 16.0
+margin_bottom = 245.0
+rect_pivot_offset = Vector2( -556, -259 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 23 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Input" type="TextureRect" parent="AbstractGame" index="1"]
+
+self_modulate = Color( 1, 1, 1, 0.0287344 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -403.0
+margin_top = -255.0
+margin_right = 10.0
+margin_bottom = -141.0
+rect_pivot_offset = Vector2( 281, 281 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 24 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Message" type="TextureRect" parent="AbstractGame" index="2"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 895.0
+margin_top = 752.0
+margin_right = 944.0
+margin_bottom = 801.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 25 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Player_Interact" type="TextureRect" parent="AbstractGame" index="3"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -597.0
+margin_top = -156.0
+margin_right = -172.0
+margin_bottom = 164.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 26 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Player" type="TextureButton" parent="AbstractGame" index="4"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -523.0
+margin_top = 580.0
+margin_right = -250.0
+margin_bottom = 853.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+texture_normal = ExtResource( 27 )
+texture_pressed = ExtResource( 27 )
+texture_hover = ExtResource( 27 )
+_sections_unfolded = [ "Rect", "Textures" ]
+
+[node name="Magic_Circle" type="TextureRect" parent="AbstractGame" index="5"]
+
+editor/display_folded = true
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -1676.0
+margin_top = -409.0
+margin_right = -857.0
+margin_bottom = 409.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 28 )
+stretch_mode = 0
+_sections_unfolded = [ "Mouse", "Rect", "Visibility" ]
+
+[node name="FixGameButton" type="TextureButton" parent="AbstractGame/Magic_Circle" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+disabled = true
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Rules" type="TextureRect" parent="AbstractGame" index="6"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -308.0
+margin_top = -203.0
+margin_right = 250.0
+margin_bottom = 206.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 29 )
+stretch_mode = 0
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="Tokens" type="TextureRect" parent="AbstractGame" index="7"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -374.0
+margin_top = -267.0
+margin_right = 309.0
+margin_bottom = 267.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 30 )
+stretch_mode = 0
+_sections_unfolded = [ "Mouse", "Rect" ]
+
+[node name="World" type="TextureRect" parent="AbstractGame" index="8"]
+
+self_modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -338.0
+margin_top = -390.0
+margin_right = 374.0
+margin_bottom = 368.0
+rect_pivot_offset = Vector2( 356, 379 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 31 )
+stretch_mode = 0
+_sections_unfolded = [ "Material", "Mouse", "Rect" ]
+
+[node name="MentalModel" type="PanelContainer" parent="AbstractGame" index="9"]
+
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 407.0
+margin_top = 496.0
+margin_right = 467.375
+margin_bottom = 591.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 17 )
+custom_styles/panel = ExtResource( 32 )
+_sections_unfolded = [ "Mouse", "Rect", "Theme", "Visibility", "custom_styles" ]
+
+[node name="LearnedInformation" type="VBoxContainer" parent="AbstractGame/MentalModel" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 30.25
+margin_top = 30.125
+margin_right = 30.0
+margin_bottom = 64.75
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+alignment = 0
+
+[node name="Title" type="Label" parent="AbstractGame/MentalModel/LearnedInformation" index="0"]
+
+visible = false
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 450.0
+margin_bottom = 72.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_fonts/font = ExtResource( 18 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Modelo mental"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="DesignQuestions" type="Container" parent="." index="9"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1664.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+
+[node name="Question1" type="Container" parent="DesignQuestions" index="0"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 430.0
+margin_top = -608.0
+margin_right = 1178.0
+margin_bottom = -451.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sticker" type="PanelContainer" parent="DesignQuestions/Question1" index="0"]
+
+modulate = Color( 0.98899, 0.98899, 0.98899, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 748.0
+margin_bottom = 157.875
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = ExtResource( 33 )
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Pin" type="TextureRect" parent="DesignQuestions/Question1" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 607.0
+margin_top = 15.0
+margin_right = 735.0
+margin_bottom = 143.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 34 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="Text" type="Label" parent="DesignQuestions/Question1" index="2"]
+
+modulate = Color( 1, 1, 1, 0.0107349 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 142.0
+margin_top = 10.0
+margin_right = 687.0
+margin_bottom = 148.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+text = "¿Qué visión del mundo me 
+gustaría comunicar?"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="QuestionButton" type="TextureButton" parent="DesignQuestions/Question1" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Question2" type="Container" parent="DesignQuestions" index="1"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 498.0
+margin_top = -405.999
+margin_right = 1246.0
+margin_bottom = -248.999
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sticker" type="PanelContainer" parent="DesignQuestions/Question2" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 748.0
+margin_bottom = 157.875
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = ExtResource( 33 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Pin" type="TextureRect" parent="DesignQuestions/Question2" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 604.0
+margin_top = 15.0
+margin_right = 732.0
+margin_bottom = 143.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 34 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="Text" type="Label" parent="DesignQuestions/Question2" index="2"]
+
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 142.0
+margin_top = 10.0
+margin_right = 687.0
+margin_bottom = 148.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+text = "¿Qué herramientas voy a darle al jugador para que explore ese mundo?"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="QuestionButton" type="TextureButton" parent="DesignQuestions/Question2" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Question3" type="Container" parent="DesignQuestions" index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 606.0
+margin_top = -229.667
+margin_right = 1354.0
+margin_bottom = -72.6666
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+_sections_unfolded = [ "Rect" ]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sticker" type="PanelContainer" parent="DesignQuestions/Question3" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 748.0
+margin_bottom = 157.875
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_styles/panel = ExtResource( 33 )
+_sections_unfolded = [ "Rect", "Visibility" ]
+
+[node name="Pin" type="TextureRect" parent="DesignQuestions/Question3" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 607.0
+margin_top = 15.0
+margin_right = 735.0
+margin_bottom = 143.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 34 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="Text" type="Label" parent="DesignQuestions/Question3" index="2"]
+
+modulate = Color( 1, 1, 1, 0 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 142.0
+margin_top = 10.0
+margin_right = 687.0
+margin_bottom = 148.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+text = "¿Qué quiero que aprenda de esa experiencia?"
+align = 1
+valign = 1
+autowrap = true
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Visibility" ]
+
+[node name="QuestionButton" type="TextureButton" parent="DesignQuestions/Question3" index="3"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+focus_mode = 2
+mouse_filter = 0
+mouse_default_cursor_shape = 2
+size_flags_horizontal = 1
+size_flags_vertical = 1
+toggle_mode = false
+enabled_focus_mode = 2
+shortcut = null
+group = null
+
+[node name="Conclusions" parent="." index="10" instance=ExtResource( 3 )]
+
+editor/display_folded = true
+position = Vector2( -1022, 47 )
+texture = ExtResource( 4 )
+centered = false
+on_drag_texture = ExtResource( 4 )
+
+[node name="Carenalga" type="Label" parent="Conclusions" index="1"]
+
+anchor_left = 0.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_top = -370.5
+margin_bottom = -324.5
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 4
+theme = ExtResource( 17 )
+custom_fonts/font = ExtResource( 18 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+text = "Conclusiones"
+align = 1
+valign = 1
+percent_visible = 1.0
+lines_skipped = 0
+max_lines_visible = -1
+_sections_unfolded = [ "Mouse" ]
+
+[node name="Container" type="Container" parent="Conclusions" index="2"]
+
+editor/display_folded = true
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = 66.0
+margin_top = 240.0
+margin_right = 928.0
+margin_bottom = 888.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="List" type="VBoxContainer" parent="Conclusions/Container" index="0"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -14.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+custom_constants/separation = 32
+alignment = 0
+_sections_unfolded = [ "Margin" ]
+
+[node name="Conclusion1" parent="Conclusions/Container/List" index="0" instance=ExtResource( 35 )]
+
+margin_right = 848.0
+margin_bottom = 95.0
+text = "Un juego es un espacio de experimentación de un mundo."
+autowrap = true
+animation_time = 0.03
+character_speed = 1
+
+[node name="Conclusion2" parent="Conclusions/Container/List" index="1" instance=ExtResource( 35 )]
+
+margin_top = 127.0
+margin_right = 848.0
+margin_bottom = 222.0
+text = "El juego se constituye de partes, reglas, funcionalidades y estética."
+autowrap = true
+animation_time = 0.03
+character_speed = 1
+
+[node name="Conclusion3" parent="Conclusions/Container/List" index="2" instance=ExtResource( 35 )]
+
+margin_top = 254.0
+margin_right = 848.0
+margin_bottom = 349.0
+text = "El ciclo juego-jugador produce un modelo mental en el segundo."
+autowrap = true
+animation_time = 0.03
+character_speed = 1
+
+[node name="Conclusion4" parent="Conclusions/Container/List" index="3" instance=ExtResource( 35 )]
+
+margin_top = 381.0
+margin_right = 848.0
+margin_bottom = 476.0
+text = "Los juegos son una herramienta de expresión para el diseñador y el jugador."
+autowrap = true
+animation_time = 0.03
+character_speed = 1
+
+[node name="Conclusion5" parent="Conclusions/Container/List" index="4" instance=ExtResource( 35 )]
+
+margin_top = 508.0
+margin_right = 848.0
+margin_bottom = 603.0
+custom_colors/font_color = Color( 0.867188, 0.138885, 0.153355, 1 )
+text = "El diseñador crea a partir de las limitaciones."
+autowrap = true
+animation_time = 0.03
+character_speed = 1
+
+[node name="Thanks" type="Container" parent="." index="11"]
+
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1664.0
+margin_bottom = 1080.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 2
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+
+[node name="Carenalga" type="TextureRect" parent="Thanks" index="0"]
+
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = 1110.0
+margin_top = -410.0
+margin_right = 1622.0
+margin_bottom = 102.0
+rect_pivot_offset = Vector2( 256, 256 )
+rect_clip_content = false
+mouse_filter = 1
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+texture = ExtResource( 19 )
+stretch_mode = 0
+_sections_unfolded = [ "Rect" ]
+
+[node name="PanelContainer" type="PanelContainer" parent="Thanks/Carenalga" index="0"]
+
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -458.0
+margin_top = -57.0
+margin_right = 406.0
+margin_bottom = 392.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+theme = ExtResource( 17 )
+custom_styles/panel = ExtResource( 32 )
+_sections_unfolded = [ "Margin" ]
+
+[node name="Thanks" parent="Thanks/Carenalga/PanelContainer" index="0" instance=ExtResource( 35 )]
+
+margin_left = 30.25
+margin_top = 54.125
+margin_right = 833.625
+margin_bottom = 394.0
+text = "a
+b
+c
+d
+e
+f
+g"
+align = 1
+valign = 1
+autowrap = true
+animation_time = 0.03
+character_speed = 1
+
+[node name="GoalsList" type="TextureRect" parent="." index="12"]
 
 editor/display_folded = true
 anchor_left = 0.0
@@ -731,15 +2133,14 @@ margin_right = 1325.0
 margin_bottom = 2098.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
-mouse_filter = 1
+mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
 texture = ExtResource( 4 )
 stretch_mode = 0
-script = ExtResource( 20 )
-_sections_unfolded = [ "Rect" ]
-checked = ExtResource( 21 )
+script = ExtResource( 36 )
+checked = ExtResource( 37 )
 
 [node name="ColorRect" type="ColorRect" parent="GoalsList" index="0"]
 
@@ -809,7 +2210,7 @@ anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
-margin_right = 825.0
+margin_right = 1229.0
 margin_bottom = 48.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -835,7 +2236,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 22 )
+texture = ExtResource( 38 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
@@ -865,12 +2266,13 @@ _sections_unfolded = [ "Theme", "custom_colors" ]
 
 [node name="Goal2" type="HBoxContainer" parent="GoalsList/List" index="1"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 52.0
-margin_right = 825.0
+margin_right = 1229.0
 margin_bottom = 100.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -896,7 +2298,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 22 )
+texture = ExtResource( 38 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
@@ -931,7 +2333,7 @@ anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 104.0
-margin_right = 825.0
+margin_right = 1229.0
 margin_bottom = 152.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -957,7 +2359,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 22 )
+texture = ExtResource( 38 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
@@ -969,7 +2371,7 @@ anchor_right = 0.0
 anchor_bottom = 0.0
 margin_left = 80.0
 margin_top = 1.0
-margin_right = 825.0
+margin_right = 633.0
 margin_bottom = 47.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -979,7 +2381,7 @@ size_flags_horizontal = 1
 size_flags_vertical = 4
 theme = ExtResource( 17 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "Explicar lo del contexto del diseñador"
+text = "Explicar lo de las preguntas"
 percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
@@ -987,12 +2389,13 @@ _sections_unfolded = [ "Theme", "custom_colors" ]
 
 [node name="Goal4" type="HBoxContainer" parent="GoalsList/List" index="3"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
 anchor_bottom = 0.0
 margin_top = 156.0
-margin_right = 825.0
+margin_right = 1229.0
 margin_bottom = 204.0
 rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
@@ -1018,7 +2421,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 4
 size_flags_vertical = 4
-texture = ExtResource( 22 )
+texture = ExtResource( 38 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect", "Size Flags" ]
 
@@ -1046,233 +2449,9 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Theme", "custom_colors" ]
 
-[node name="AbstractGame" type="Container" parent="." index="7"]
+[node name="UI" type="Container" parent="." index="13"]
 
 editor/display_folded = true
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_right = 1664.0
-margin_bottom = 1080.0
-rect_pivot_offset = Vector2( 832, 540 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-_sections_unfolded = [ "Mouse", "Rect" ]
-
-[node name="Feedback" type="TextureRect" parent="AbstractGame" index="0"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -424.0
-margin_top = 142.0
-margin_right = 16.0
-margin_bottom = 245.0
-rect_pivot_offset = Vector2( -556, -259 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 23 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
-
-[node name="Input" type="TextureRect" parent="AbstractGame" index="1"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -403.0
-margin_top = -255.0
-margin_right = 10.0
-margin_bottom = -141.0
-rect_pivot_offset = Vector2( 281, 281 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 24 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
-
-[node name="Message" type="TextureRect" parent="AbstractGame" index="2"]
-
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 416.0
-margin_top = 418.0
-margin_right = 465.0
-margin_bottom = 467.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 25 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
-
-[node name="MentalModel" type="PanelContainer" parent="AbstractGame" index="3"]
-
-editor/display_folded = true
-modulate = Color( 1, 1, 1, 0.0758548 )
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 430.0
-margin_top = 410.0
-margin_right = 490.375
-margin_bottom = 505.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 2
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-theme = ExtResource( 17 )
-custom_styles/panel = ExtResource( 26 )
-_sections_unfolded = [ "Rect", "Theme", "custom_styles" ]
-
-[node name="LearnedInformation" type="VBoxContainer" parent="AbstractGame/MentalModel" index="0"]
-
-anchor_left = 0.0
-anchor_top = 0.0
-anchor_right = 0.0
-anchor_bottom = 0.0
-margin_left = 30.25
-margin_top = 30.125
-margin_right = 30.0
-margin_bottom = 64.75
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-alignment = 0
-
-[node name="Player_Interact" type="TextureRect" parent="AbstractGame" index="4"]
-
-self_modulate = Color( 1, 1, 1, 0 )
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -597.0
-margin_top = -156.0
-margin_right = -172.0
-margin_bottom = 164.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 27 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect", "Visibility" ]
-
-[node name="Player" type="TextureButton" parent="AbstractGame" index="5"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -523.0
-margin_top = 580.0
-margin_right = -250.0
-margin_bottom = 853.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-focus_mode = 2
-mouse_filter = 0
-mouse_default_cursor_shape = 2
-size_flags_horizontal = 1
-size_flags_vertical = 1
-toggle_mode = false
-enabled_focus_mode = 2
-shortcut = null
-group = null
-texture_normal = ExtResource( 28 )
-texture_pressed = ExtResource( 28 )
-texture_hover = ExtResource( 28 )
-_sections_unfolded = [ "Rect", "Textures" ]
-
-[node name="Magic_Circle" type="TextureRect" parent="AbstractGame" index="6"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -410.0
-margin_top = -409.0
-margin_right = 409.0
-margin_bottom = 409.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 29 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
-
-[node name="Rules" type="TextureRect" parent="AbstractGame" index="7"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -308.0
-margin_top = -203.0
-margin_right = 244.0
-margin_bottom = 203.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 30 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
-
-[node name="Tokens" type="TextureRect" parent="AbstractGame" index="8"]
-
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
-margin_left = -374.0
-margin_top = -267.0
-margin_right = 309.0
-margin_bottom = 267.0
-rect_pivot_offset = Vector2( 0, 0 )
-rect_clip_content = false
-mouse_filter = 1
-mouse_default_cursor_shape = 0
-size_flags_horizontal = 1
-size_flags_vertical = 1
-texture = ExtResource( 31 )
-stretch_mode = 0
-_sections_unfolded = [ "Rect" ]
-
-[node name="UI" type="Container" parent="." index="8"]
-
 anchor_left = 1.0
 anchor_top = 0.0
 anchor_right = 1.0
@@ -1286,12 +2465,11 @@ mouse_filter = 2
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-script = ExtResource( 32 )
+script = ExtResource( 39 )
 _sections_unfolded = [ "Rect" ]
 
 [node name="MenuGame" type="VBoxContainer" parent="UI" index="0"]
 
-editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1322,14 +2500,14 @@ rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
-mouse_default_cursor_shape = 0
+mouse_default_cursor_shape = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/hover = ExtResource( 33 )
-custom_styles/pressed = ExtResource( 33 )
-custom_styles/disabled = ExtResource( 34 )
-custom_styles/normal = ExtResource( 35 )
-custom_fonts/font = ExtResource( 36 )
+custom_styles/hover = ExtResource( 40 )
+custom_styles/pressed = ExtResource( 40 )
+custom_styles/disabled = ExtResource( 41 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 21 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0.3125, 0.3125, 0.3125, 1 )
 toggle_mode = false
@@ -1354,14 +2532,14 @@ rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
-mouse_default_cursor_shape = 0
+mouse_default_cursor_shape = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/hover = ExtResource( 33 )
-custom_styles/pressed = ExtResource( 33 )
-custom_styles/disabled = ExtResource( 34 )
-custom_styles/normal = ExtResource( 35 )
-custom_fonts/font = ExtResource( 36 )
+custom_styles/hover = ExtResource( 40 )
+custom_styles/pressed = ExtResource( 40 )
+custom_styles/disabled = ExtResource( 41 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 21 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0.3125, 0.3125, 0.3125, 1 )
 toggle_mode = false
@@ -1386,14 +2564,14 @@ rect_pivot_offset = Vector2( 0, 0 )
 rect_clip_content = false
 focus_mode = 2
 mouse_filter = 0
-mouse_default_cursor_shape = 0
+mouse_default_cursor_shape = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
-custom_styles/hover = ExtResource( 33 )
-custom_styles/pressed = ExtResource( 33 )
-custom_styles/disabled = ExtResource( 34 )
-custom_styles/normal = ExtResource( 35 )
-custom_fonts/font = ExtResource( 36 )
+custom_styles/hover = ExtResource( 40 )
+custom_styles/pressed = ExtResource( 40 )
+custom_styles/disabled = ExtResource( 41 )
+custom_styles/normal = ExtResource( 42 )
+custom_fonts/font = ExtResource( 21 )
 custom_colors/font_color_hover = Color( 0, 0, 0, 1 )
 custom_colors/font_color_pressed = Color( 0.3125, 0.3125, 0.3125, 1 )
 toggle_mode = false
@@ -1420,7 +2598,7 @@ mouse_filter = 1
 mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 1
-texture = ExtResource( 37 )
+texture = ExtResource( 43 )
 stretch_mode = 0
 _sections_unfolded = [ "Rect" ]
 
@@ -1441,7 +2619,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 theme = ExtResource( 17 )
-custom_fonts/font = ExtResource( 38 )
+custom_fonts/font = ExtResource( 44 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
 text = "20:00"
 align = 1
@@ -1453,6 +2631,7 @@ _sections_unfolded = [ "Rect", "custom_fonts" ]
 
 [node name="Buttons" type="VBoxContainer" parent="UI" index="3"]
 
+editor/display_folded = true
 anchor_left = 0.0
 anchor_top = 0.0
 anchor_right = 0.0
@@ -1495,9 +2674,9 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 39 )
-texture_pressed = ExtResource( 40 )
-texture_disabled = ExtResource( 41 )
+texture_normal = ExtResource( 45 )
+texture_pressed = ExtResource( 46 )
+texture_disabled = ExtResource( 47 )
 
 [node name="Label" type="Label" parent="UI/Buttons/Designer" index="0"]
 
@@ -1516,7 +2695,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 theme = ExtResource( 17 )
-custom_fonts/font = ExtResource( 42 )
+custom_fonts/font = ExtResource( 48 )
 text = "Diseñador"
 align = 1
 valign = 1
@@ -1548,9 +2727,9 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 43 )
-texture_pressed = ExtResource( 44 )
-texture_disabled = ExtResource( 45 )
+texture_normal = ExtResource( 49 )
+texture_pressed = ExtResource( 50 )
+texture_disabled = ExtResource( 51 )
 _sections_unfolded = [ "Textures" ]
 
 [node name="Label" type="Label" parent="UI/Buttons/Game" index="0"]
@@ -1570,7 +2749,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 theme = ExtResource( 17 )
-custom_fonts/font = ExtResource( 42 )
+custom_fonts/font = ExtResource( 48 )
 text = "Juego"
 align = 1
 valign = 1
@@ -1602,9 +2781,9 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 46 )
-texture_pressed = ExtResource( 47 )
-texture_disabled = ExtResource( 48 )
+texture_normal = ExtResource( 52 )
+texture_pressed = ExtResource( 53 )
+texture_disabled = ExtResource( 54 )
 _sections_unfolded = [ "Size Flags", "Textures" ]
 
 [node name="Label" type="Label" parent="UI/Buttons/Player" index="0"]
@@ -1624,7 +2803,7 @@ mouse_default_cursor_shape = 0
 size_flags_horizontal = 1
 size_flags_vertical = 4
 theme = ExtResource( 17 )
-custom_fonts/font = ExtResource( 42 )
+custom_fonts/font = ExtResource( 48 )
 text = "Jugadora"
 align = 1
 valign = 1
@@ -1633,7 +2812,7 @@ lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "Rect", "custom_fonts" ]
 
-[node name="Rules" type="TextureButton" parent="UI/Buttons" index="3"]
+[node name="Context" type="TextureButton" parent="UI/Buttons" index="3"]
 
 self_modulate = Color( 1, 1, 1, 0 )
 anchor_left = 0.0
@@ -1656,9 +2835,9 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 49 )
-texture_pressed = ExtResource( 50 )
-texture_disabled = ExtResource( 51 )
+texture_normal = ExtResource( 55 )
+texture_pressed = ExtResource( 56 )
+texture_disabled = ExtResource( 57 )
 _sections_unfolded = [ "Mouse", "Textures", "Visibility" ]
 
 [node name="Goals" type="TextureButton" parent="UI/Buttons" index="4"]
@@ -1683,14 +2862,28 @@ toggle_mode = true
 enabled_focus_mode = 2
 shortcut = null
 group = null
-texture_normal = ExtResource( 52 )
-texture_pressed = ExtResource( 53 )
+texture_normal = ExtResource( 58 )
+texture_pressed = ExtResource( 59 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 
 [connection signal="area_entered" from="SheetEater" to="." method="_on_Area2D_area_entered"]
 
+[connection signal="mouse_entered" from="DesignGoal" to="." method="_on_DesignGoal_mouse_entered"]
+
+[connection signal="pressed" from="DesignGoal/FakeButton" to="." method="_on_FakeButton_pressed"]
+
 [connection signal="pressed" from="AbstractGame/Player" to="." method="_on_Player_pressed"]
+
+[connection signal="pressed" from="AbstractGame/Magic_Circle/FixGameButton" to="." method="_on_FixGameButton_pressed"]
+
+[connection signal="pressed" from="DesignQuestions/Question1/QuestionButton" to="." method="_on_QuestionButton_pressed" binds= [ 1 ]]
+
+[connection signal="pressed" from="DesignQuestions/Question2/QuestionButton" to="." method="_on_QuestionButton_pressed" binds= [ 2 ]]
+
+[connection signal="pressed" from="DesignQuestions/Question3/QuestionButton" to="." method="_on_QuestionButton_pressed" binds= [ 3 ]]
+
+[connection signal="drag_end" from="Conclusions" to="." method="_on_Conclusions_drag_end"]
 
 [connection signal="pressed" from="UI/MenuGame/Constraints" to="UI" method="_on_Constraints_pressed"]
 
@@ -1703,6 +2896,8 @@ texture_pressed = ExtResource( 53 )
 [connection signal="pressed" from="UI/Buttons/Game" to="UI" method="_on_Game_pressed"]
 
 [connection signal="pressed" from="UI/Buttons/Player" to="UI" method="_on_Player_pressed"]
+
+[connection signal="pressed" from="UI/Buttons/Context" to="UI" method="_on_Context_pressed"]
 
 [connection signal="pressed" from="UI/Buttons/Goals" to="UI" method="_on_Goals_pressed"]
 

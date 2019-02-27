@@ -66,6 +66,7 @@ func on_drag_end():
 	if byebye:
 		yield(byebye(), 'completed')
 		$'../..'.next_sheet()
+	emit_signal('drag_end')
 
 func on_drag_start():
 	self.texture = on_drag_texture
